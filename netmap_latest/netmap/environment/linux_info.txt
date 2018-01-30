@@ -1,0 +1,1 @@
+Linux root1-ThinkPad-T440p 4.4.0-103-generic #126-Ubuntu SMP Mon Dec 4 16:23:28 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux

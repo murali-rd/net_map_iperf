@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+ 193236	  13280	     60	 206576	  326f0	e1000e/e1000e.ko

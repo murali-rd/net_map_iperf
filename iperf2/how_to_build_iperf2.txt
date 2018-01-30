@@ -1,0 +1,27 @@
+iper2 configure and build::::
+
+1. configure step
+
+root@root1-ThinkPad-T440p:/home/netmap/iperf2/android/iperf-2.0.10# CFLAGS=-fPIE LIBS=-llwipcommon LDFLAGS='-pie --verbose -L/home/netmap/lwip/contrib-2.0.1/ports/unix/lib' CXXFLAGS=-fPIE ./configure --host=aarch64-linux-android --prefix=/home/netmap/iperf2/android/lwip_bin
+
+use --host only for cross compile.. otherwise not required.
+
+2. compile
+
+root@root1-ThinkPad-T440p:/home/netmap/iperf2/android/iperf-2.0.10# CFLAGS=-fPIE LIBS=-llwipcommon LDFLAGS='-pie --verbose -L/home/netmap/lwip/contrib-2.0.1/ports/unix/lib' CXXFLAGS=-fPIE make
+
+
+to cross-compile add these commands before step 1.
+
+
+
+    $ export CROSS_COMPILE=/home/root1/anmol/aarch64-linux-android/bin/aarch64-linux-android-
+    $ export CC=${CROSS_COMPILE}gcc
+    $ export CPP=${CROSS_COMPILE}cpp
+    $ export CXX=${CROSS_COMPILE}g++
+    $ export LD=${CROSS_COMPILE}ld
+    $ export AR=${CROSS_COMPILE}ar 
+
+
+
+

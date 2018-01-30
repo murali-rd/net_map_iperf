@@ -1,0 +1,120 @@
+4061:   ./iperf -s -i 1
+Address           Kbytes     RSS   Dirty Mode  Mapping
+0000000000400000     104     104       0 r-x-- iperf
+0000000000400000       0       0       0 r-x-- iperf
+000000000061a000       4       4       4 r---- iperf
+000000000061a000       0       0       0 r---- iperf
+000000000061b000       4       4       4 rw--- iperf
+000000000061b000       0       0       0 rw--- iperf
+0000000001dee000     200      12      12 rw---   [ anon ]
+0000000001dee000       0       0       0 rw---   [ anon ]
+00007f56978df000  334980      16       8 rw-s- netmap
+00007f56978df000       0       0       0 rw-s- netmap
+00007f56ac000000     132       4       4 rw---   [ anon ]
+00007f56ac000000       0       0       0 rw---   [ anon ]
+00007f56ac021000   65404       0       0 -----   [ anon ]
+00007f56ac021000       0       0       0 -----   [ anon ]
+00007f56b37ff000       4       0       0 -----   [ anon ]
+00007f56b37ff000       0       0       0 -----   [ anon ]
+00007f56b3800000    8192    2048    2048 rw---   [ anon ]
+00007f56b3800000       0       0       0 rw---   [ anon ]
+00007f56b4000000     140      16      16 rw---   [ anon ]
+00007f56b4000000       0       0       0 rw---   [ anon ]
+00007f56b4023000   65396       0       0 -----   [ anon ]
+00007f56b4023000       0       0       0 -----   [ anon ]
+00007f56b80ee000       4       0       0 -----   [ anon ]
+00007f56b80ee000       0       0       0 -----   [ anon ]
+00007f56b80ef000    8192       8       8 rw---   [ anon ]
+00007f56b80ef000       0       0       0 rw---   [ anon ]
+00007f56b88ef000       4       0       0 -----   [ anon ]
+00007f56b88ef000       0       0       0 -----   [ anon ]
+00007f56b88f0000    8192       8       8 rw---   [ anon ]
+00007f56b88f0000       0       0       0 rw---   [ anon ]
+00007f56b90f0000       4       0       0 -----   [ anon ]
+00007f56b90f0000       0       0       0 -----   [ anon ]
+00007f56b90f1000    8192       8       8 rw---   [ anon ]
+00007f56b90f1000       0       0       0 rw---   [ anon ]
+00007f56b98f1000    1792    1332       0 r-x-- libc-2.23.so
+00007f56b98f1000       0       0       0 r-x-- libc-2.23.so
+00007f56b9ab1000    2048       0       0 ----- libc-2.23.so
+00007f56b9ab1000       0       0       0 ----- libc-2.23.so
+00007f56b9cb1000      16      16      16 r---- libc-2.23.so
+00007f56b9cb1000       0       0       0 r---- libc-2.23.so
+00007f56b9cb5000       8       8       8 rw--- libc-2.23.so
+00007f56b9cb5000       0       0       0 rw--- libc-2.23.so
+00007f56b9cb7000      16      12      12 rw---   [ anon ]
+00007f56b9cb7000       0       0       0 rw---   [ anon ]
+00007f56b9cbb000      96      84       0 r-x-- libpthread-2.23.so
+00007f56b9cbb000       0       0       0 r-x-- libpthread-2.23.so
+00007f56b9cd3000    2044       0       0 ----- libpthread-2.23.so
+00007f56b9cd3000       0       0       0 ----- libpthread-2.23.so
+00007f56b9ed2000       4       4       4 r---- libpthread-2.23.so
+00007f56b9ed2000       0       0       0 r---- libpthread-2.23.so
+00007f56b9ed3000       4       4       4 rw--- libpthread-2.23.so
+00007f56b9ed3000       0       0       0 rw--- libpthread-2.23.so
+00007f56b9ed4000      16       4       4 rw---   [ anon ]
+00007f56b9ed4000       0       0       0 rw---   [ anon ]
+00007f56b9ed8000      88      88       0 r-x-- libgcc_s.so.1
+00007f56b9ed8000       0       0       0 r-x-- libgcc_s.so.1
+00007f56b9eee000    2044       0       0 ----- libgcc_s.so.1
+00007f56b9eee000       0       0       0 ----- libgcc_s.so.1
+00007f56ba0ed000       4       4       4 rw--- libgcc_s.so.1
+00007f56ba0ed000       0       0       0 rw--- libgcc_s.so.1
+00007f56ba0ee000    1056     196       0 r-x-- libm-2.23.so
+00007f56ba0ee000       0       0       0 r-x-- libm-2.23.so
+00007f56ba1f6000    2044       0       0 ----- libm-2.23.so
+00007f56ba1f6000       0       0       0 ----- libm-2.23.so
+00007f56ba3f5000       4       4       4 r---- libm-2.23.so
+00007f56ba3f5000       0       0       0 r---- libm-2.23.so
+00007f56ba3f6000       4       4       4 rw--- libm-2.23.so
+00007f56ba3f6000       0       0       0 rw--- libm-2.23.so
+00007f56ba3f7000    1480     736       0 r-x-- libstdc++.so.6.0.21
+00007f56ba3f7000       0       0       0 r-x-- libstdc++.so.6.0.21
+00007f56ba569000    2048       0       0 ----- libstdc++.so.6.0.21
+00007f56ba569000       0       0       0 ----- libstdc++.so.6.0.21
+00007f56ba769000      40      40      40 r---- libstdc++.so.6.0.21
+00007f56ba769000       0       0       0 r---- libstdc++.so.6.0.21
+00007f56ba773000       8       8       8 rw--- libstdc++.so.6.0.21
+00007f56ba773000       0       0       0 rw--- libstdc++.so.6.0.21
+00007f56ba775000      16       8       8 rw---   [ anon ]
+00007f56ba775000       0       0       0 rw---   [ anon ]
+00007f56ba779000      28      28       0 r-x-- librt-2.23.so
+00007f56ba779000       0       0       0 r-x-- librt-2.23.so
+00007f56ba780000    2044       0       0 ----- librt-2.23.so
+00007f56ba780000       0       0       0 ----- librt-2.23.so
+00007f56ba97f000       4       4       4 r---- librt-2.23.so
+00007f56ba97f000       0       0       0 r---- librt-2.23.so
+00007f56ba980000       4       4       4 rw--- librt-2.23.so
+00007f56ba980000       0       0       0 rw--- librt-2.23.so
+00007f56ba981000     236     228       0 r-x-- liblwipcommon.a
+00007f56ba981000       0       0       0 r-x-- liblwipcommon.a
+00007f56ba9bc000    2044       0       0 ----- liblwipcommon.a
+00007f56ba9bc000       0       0       0 ----- liblwipcommon.a
+00007f56babbb000       4       4       4 r---- liblwipcommon.a
+00007f56babbb000       0       0       0 r---- liblwipcommon.a
+00007f56babbc000       4       4       4 rw--- liblwipcommon.a
+00007f56babbc000       0       0       0 rw--- liblwipcommon.a
+00007f56babbd000      12       8       8 rw---   [ anon ]
+00007f56babbd000       0       0       0 rw---   [ anon ]
+00007f56babc0000     152     152       0 r-x-- ld-2.23.so
+00007f56babc0000       0       0       0 r-x-- ld-2.23.so
+00007f56badc4000      24      24      24 rw---   [ anon ]
+00007f56badc4000       0       0       0 rw---   [ anon ]
+00007f56bade3000       8       8       8 rw---   [ anon ]
+00007f56bade3000       0       0       0 rw---   [ anon ]
+00007f56bade5000       4       4       4 r---- ld-2.23.so
+00007f56bade5000       0       0       0 r---- ld-2.23.so
+00007f56bade6000       4       4       4 rw--- ld-2.23.so
+00007f56bade6000       0       0       0 rw--- ld-2.23.so
+00007f56bade7000       4       4       4 rw---   [ anon ]
+00007f56bade7000       0       0       0 rw---   [ anon ]
+00007ffe2390c000     132      12      12 rw---   [ stack ]
+00007ffe2390c000       0       0       0 rw---   [ stack ]
+00007ffe23984000       8       0       0 r----   [ anon ]
+00007ffe23984000       0       0       0 r----   [ anon ]
+00007ffe23986000       8       4       0 r-x--   [ anon ]
+00007ffe23986000       0       0       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 r-x--   [ anon ]
+ffffffffff600000       0       0       0 r-x--   [ anon ]
+---------------- ------- ------- ------- 
+total kB          853736    5276    2316

@@ -1,0 +1,84 @@
+21243: ./iperf
+Address            Kbytes     PSS   Dirty    Swap  Mode  Mapping
+0000005f44fba000     204     100       0       0 r-x--  iperf
+0000005f44ffd000      12      12      12       0 r----  iperf
+0000005f45000000       4       4       4       0 rw---  iperf
+0000005f45001000      72      12      12       0 rw---    [anon]
+000000757a1b5000       4       0       0       0 -----    [anon:thread stack guard page]
+000000757a1b6000    1008       8       8       0 rw---    [stack:21249]
+000000757a2b2000   35140     336     120       0 rw-s-  netmap
+000000757c503000       4       0       0       0 -----    [anon:thread stack guard page]
+000000757c504000    1008       8       8       0 rw---    [stack:21246]
+000000757c600000    2048      68      68       0 rw---    [anon:libc_malloc]
+000000757c806000       4       0       0       0 -----    [anon:thread stack guard page]
+000000757c807000    1008       8       8       0 rw---    [stack:21245]
+000000757c903000       4       0       0       0 -----    [anon:thread stack guard page]
+000000757c904000    1008       8       8       0 rw---    [stack:21244]
+000000757ca00000    4096     140     140       0 rw---    [anon:libc_malloc]
+000000757ce35000     128       0       0       0 r--s-  u:object_r:debug_prop:s0
+000000757ce55000     864       5       0       0 r-x--  libc++.so
+000000757cf2d000      32      32      32       0 r----  libc++.so
+000000757cf35000       4       4       4       0 rw---  libc++.so
+000000757cf36000      12      12      12       0 rw---    [anon:.bss]
+000000757cf50000       4       0       0       0 -----    [anon:thread signal stack guard page]
+000000757cf51000      16       0       0       0 rw---    [anon:thread signal stack]
+000000757cf55000     128       0       0       0 r--s-  u:object_r:default_prop:s0
+000000757cf75000     128       0       0       0 r--s-  properties_serial
+000000757cf95000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757cf97000     212       0       0       0 r-x--  libm.so
+000000757cfcc000       4       0       0       0 -----    [anon]
+000000757cfcd000       4       4       4       0 r----  libm.so
+000000757cfce000       4       4       4       0 rw---  libm.so
+000000757cfcf000     748       6       0       0 r-x--  libc.so
+000000757d08a000       4       0       0       0 -----    [anon]
+000000757d08b000      24      24      24       0 r----  libc.so
+000000757d091000       8       8       8       0 rw---  libc.so
+000000757d093000       4       4       4       0 rw---    [anon:.bss]
+000000757d094000       4       4       4       0 r----    [anon:.bss]
+000000757d095000      28      24      24       0 rw---    [anon:.bss]
+000000757d09c000     228     180       0       0 r-x--  liblwipcommon.a
+000000757d0d5000      60       0       0       0 -----    [anon]
+000000757d0e4000       4       4       4       0 r----  liblwipcommon.a
+000000757d0e5000       4       4       4       0 rw---  liblwipcommon.a
+000000757d0e6000       8       4       4       0 rw---    [anon:.bss]
+000000757d0e9000       4       0       0       0 -----    [anon:thread signal stack guard page]
+000000757d0ea000      16       0       0       0 rw---    [anon:thread signal stack]
+000000757d0ee000       4       0       0       0 -----    [anon:thread signal stack guard page]
+000000757d0ef000      16       0       0       0 rw---    [anon:thread signal stack]
+000000757d0f3000       8       0       0       0 r-x--  libnetd_client.so
+000000757d0f5000       4       4       4       0 r----  libnetd_client.so
+000000757d0f6000       4       4       4       0 rw---  libnetd_client.so
+000000757d0fb000       4       0       0       0 -----    [anon:thread signal stack guard page]
+000000757d0fc000      16       0       0       0 rw---    [anon:thread signal stack]
+000000757d100000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757d101000       4       4       4       0 r----    [anon:atexit handlers]
+000000757d102000     128       0       0       0 r--s-  properties_serial
+000000757d122000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757d123000       4       4       4       0 rw---    [anon:linker_alloc_small_objects]
+000000757d124000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757d125000       8       8       8       0 rw---    [anon:linker_alloc]
+000000757d127000       4       4       4       0 rw---    [anon:linker_alloc_small_objects]
+000000757d128000       4       4       4       0 rw---    [anon:linker_alloc_lob]
+000000757d129000       4       4       4       0 r----    [anon:linker_alloc]
+000000757d12a000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757d12b000       4       4       4       0 rw---    [anon:linker_alloc_small_objects]
+000000757d12c000       4       4       4       0 r----    [anon:linker_alloc]
+000000757d12d000       4       4       4       0 rw---    [anon:linker_alloc_small_objects]
+000000757d12e000       4       4       4       0 rw---    [anon:linker_alloc_vector]
+000000757d12f000       4       4       4       0 rw---    [anon:linker_alloc_small_objects]
+000000757d130000       4       4       4       0 rw---    [anon:arc4random _rsx structure]
+000000757d131000       4       4       4       0 rw---    [anon:arc4random _rs structure]
+000000757d132000       4       0       0       0 -----    [anon:thread signal stack guard page]
+000000757d133000      16       0       0       0 rw---    [anon:thread signal stack]
+000000757d137000       4       0       0       0 r----    [vvar]
+000000757d138000       4       0       0       0 r-x--    [vdso]
+000000757d139000     672       3       0       0 r-x--  linker64
+000000757d1e1000       4       4       4       0 r----    [anon:atexit handlers]
+000000757d1e2000      12      12      12       0 r----  linker64
+000000757d1e5000       4       4       4       0 rw---  linker64
+000000757d1e6000      12       8       8       0 rw---    [anon]
+000000757d1e9000       4       4       4       0 r----    [anon]
+000000757d1ea000      12       8       8       0 rw---    [anon]
+0000007fea3a1000     132      20      20       0 rw---    [stack]
+----------------  ------  ------  ------  ------
+total              49448    1174     664       0

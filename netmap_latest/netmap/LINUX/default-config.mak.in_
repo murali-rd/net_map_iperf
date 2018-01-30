@@ -1,0 +1,24 @@
+define intel_driver
+$(1)@fetch	:= test -e @SRCDIR@/ext-drivers/$(1)-$(2).tar.gz || wget https://sourceforge.net/projects/e1000/files/$(1)%20stable/$(2)/$(1)-$(2).tar.gz -P @SRCDIR@/ext-drivers/
+$(1)@src 	:= tar xf @SRCDIR@/ext-drivers/$(1)-$(2).tar.gz && ln -s $(1)-$(2)/src $(1)
+$(1)@patch 	:= patches/intel--$(1)--$(2)
+$(1)@build 	:= make -C $(1) CFLAGS_EXTRA="$($(1)@cflags) $(EXTRA_CFLAGS)" @KOPTS@ NETMAP_DRIVER_SUFFIX=@DRVSUFFIX@ KSRC=@KSRC@
+$(1)@install 	:= make -C $(1) install INSTALL_MOD_PATH=@MODPATH@ CFLAGS_EXTRA="$($(1)@cflags) $(EXTRA_CFLAGS)" NETMAP_DRIVER_SUFFIX=@DRVSUFFIX@ KSRC=@KSRC@
+$(1)@clean 	:= if [ -d $(1) ]; then make -C $(1) clean CFLAGS_EXTRA="$($(1)@cflags) $(EXTRA_CFLAGS)" NETMAP_DRIVER_SUFFIX=@DRVSUFFIX@ KSRC=@KSRC@; fi
+$(1)@distclean	:= rm -rf $(1)-$(2)
+$(1)@force	:= 1
+endef
+
+define default
+$(1)@v := $(if $($(1)@v),$($(1)@v),$(2))
+endef
+
+e1000e@cflags := -fno-pie
+igb@cflags := -DDISABLE_PACKET_SPLIT -fno-pie
+$(eval $(call default,ixgbe,5.3.3))
+$(eval $(call default,ixgbevf,4.3.2))
+$(eval $(call default,e1000e,3.3.6))
+$(eval $(call default,igb,5.3.5.12))
+$(eval $(call default,i40e,2.3.6))
+
+$(foreach d,$(E_DRIVERS),$(eval $(call intel_driver,$d,$($(d)@v))))
